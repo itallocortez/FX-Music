@@ -1,5 +1,6 @@
 package br.com.fxmusic;
 
+import br.com.fxmusic.dao.UsuarioDao;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,6 +8,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class MainApp extends Application {
+	
+	private static UsuarioDao uDao;
 
 	@Override
 	public void start(Stage stage) throws Exception {
@@ -17,6 +20,15 @@ public class MainApp extends Application {
 		stage.setTitle("FX Music");
 		stage.setResizable(false);
 		stage.show();
+		
+		uDao = UsuarioDao.getInstance();
+		//uDao.addUsuario("Itallo", "itallo.cortez", "123");
+		//uDao.addUsuario("Samuel", "samuel.vta", "123");
+		
+		uDao.carregarUsuarios();
+		uDao.listarUsuarios();
+		
+		//uDao.salvarUsuarios();
 	}
 	
 	public static void main(String[] args) {
