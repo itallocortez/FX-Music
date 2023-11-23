@@ -15,6 +15,9 @@ tmp/
 # Arquivos do JavaFX
 build.fxbuild
 
+# Diretório target gerado pelo Maven
+target/
+
 # Diretórios de saída
 /bin/
 /gen/

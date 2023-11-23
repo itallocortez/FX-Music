@@ -16,6 +16,9 @@ public class MainApp extends Application {
 		Parent root = FXMLLoader.load(getClass().getResource("visao/TelaPrincipal.fxml"));
 		Scene scene = new Scene(root);
 		
+		// Carrega o estilo inicial (claro)
+        //scene.getStylesheets().add(getClass().getResource("/application/darkmode.css").toExternalForm());
+		
 		stage.setScene(scene);
 		stage.setTitle("FX Music");
 		stage.setResizable(false);
