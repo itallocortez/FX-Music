@@ -1,0 +1,30 @@
+# Arquivos de configuração do Eclipse
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~
+
+# Diretórios específicos do Eclipse
+.settings/
+.classpath
+.project
+
+# Arquivos do JavaFX
+build.fxbuild
+
+# Diretórios de saída
+/bin/
+/gen/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# Bytecode compilado
+*.class
