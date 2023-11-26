@@ -1,10 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane minHeight="200.0" minWidth="200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="885.0" stylesheets="@../../../../application/TelaPrincipal.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fxmusic.controle.TelaPrincipalController">
    <children>
-      <JFXButton fx:id="btnAbrirTelaLogin" layoutX="33.0" layoutY="87.0" text="ABRIR TELA DE LOGIN" />
+      <MenuBar prefHeight="26.0" prefWidth="885.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane layoutY="26.0" prefHeight="478.0" prefWidth="886.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Músicas">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="216.0" prefWidth="886.0">
+                     <children>
+                        <ListView fx:id="listViewMusicas" layoutX="13.0" layoutY="90.0" prefHeight="346.0" prefWidth="856.0" />
+                        <Text layoutX="14.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clique em uma música para reproduzir :D">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Playlists">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="411.0" prefWidth="886.0" />
+            </content>
+          </Tab>
+            <Tab text="Diretórios">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="216.0" prefWidth="886.0">
+                     <children>
+                        <Text layoutX="14.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Essa lista contém os diretórios ou pastas por onde o programa procura as músicas.">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnAddDiretorio" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" onAction="#escolherDiretorio" prefHeight="38.0" prefWidth="232.0" text="Adicionar Diretório">
+                           <graphic>
+                              <FontIcon iconLiteral="ti-folder" wrappingWidth="22.799985885620117" />
+                           </graphic>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                        <ListView fx:id="listViewDiretorios" layoutX="13.0" layoutY="113.0" prefHeight="322.0" prefWidth="856.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Group layoutX="-1.0" layoutY="497.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="90.0" layoutX="-1.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="889.0" />
+            <ImageView fitHeight="94.0" fitWidth="88.0" layoutX="2.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  
+               </image>
+            </ImageView>
+            <Group layoutX="304.0" layoutY="71.0">
+               <children>
+                  <Text layoutX="-28.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0:00">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Slider layoutX="3.0" prefHeight="19.0" prefWidth="278.0" />
+                  <Text layoutX="287.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0:00">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Group>
+            <Group layoutX="361.0" layoutY="15.0">
+               <children>
+                  <Button layoutX="57.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="54.0" styleClass="btnPlayer">
+                     <graphic>
+                        <FontIcon iconLiteral="ti-control-play" iconSize="40" text="" wrappingWidth="34.4000244140625" />
+                     </graphic>
+                  </Button>
+                  <Button layoutY="3.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="46.0" styleClass="btnPlayer">
+                     <graphic>
+                        <FontIcon iconLiteral="ti-control-skip-backward" iconSize="30" />
+                     </graphic>
+                  </Button>
+                  <Button layoutX="120.0" layoutY="3.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="46.0" styleClass="btnPlayer">
+                     <graphic>
+                        <FontIcon iconLiteral="ti-control-skip-forward" iconSize="30" />
+                     </graphic>
+                  </Button>
+               </children>
+            </Group>
+            <Group layoutX="671.0" layoutY="31.25">
+               <children>
+                  <Slider layoutX="29.0" layoutY="2.75" />
+                  <FontIcon iconLiteral="ti-volume" iconSize="20" layoutX="2.0" layoutY="18.0" />
+               </children>
+            </Group>
+         </children>
+      </Group>
    </children>
 </AnchorPane>

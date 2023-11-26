@@ -93,6 +93,11 @@ public class UsuarioDao {
     // Carrega os usuários contidos no arquivo .txt para o sistema
     // [Posso criar uma exceção customizada no futuro]
     public void carregarUsuarios() {
+    	// Zera a ArrayList para não somar com possíveis valores anteriores
+    	if(usuarios.size() > 0) {
+    		usuarios.clear();
+    	}
+    	
     	try (BufferedReader reader = new BufferedReader(new FileReader(USUARIOS_TXT_PATH))) {
             String line;
             while ((line = reader.readLine()) != null) {

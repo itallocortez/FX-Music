@@ -17,4 +17,8 @@ public class Musica {
 	public void setDiretorio(String diretorio) {
 		this.diretorio = diretorio;
 	}
+	
+	public String toString() {
+		return nome;
+	}
 }
