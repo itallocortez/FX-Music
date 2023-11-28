@@ -18,6 +18,7 @@ public class Musica {
 		this.diretorio = diretorio;
 	}
 	
+	@Override
 	public String toString() {
 		return nome;
 	}

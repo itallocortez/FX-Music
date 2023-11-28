@@ -76,7 +76,8 @@ public class DiretorioDao {
             	diretorios.add(line);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            System.err.println("[ERRO] Arquivo diretorio.txt não foi encontrado.");
         }
     }
 }
