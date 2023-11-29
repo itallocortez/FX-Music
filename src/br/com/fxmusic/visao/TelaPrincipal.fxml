@@ -6,27 +6,27 @@
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="885.0" stylesheets="@../../../../application/TelaPrincipal.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fxmusic.controle.TelaPrincipalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="885.0" style="-fx-background-color: #313338;" stylesheets="@../../../../application/TelaPrincipal.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fxmusic.controle.TelaPrincipalController">
    <children>
-      <Text fx:id="labelCabecalho" layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minhas Músicas">
+      <Text fx:id="labelCabecalho" fill="WHITE" layoutX="14.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minhas Músicas">
          <font>
             <Font size="39.0" />
          </font>
       </Text>
       <Group layoutX="670.0" layoutY="34.0">
          <children>
-            <Button layoutX="37.0" layoutY="11.0" mnemonicParsing="false" text="FAZER LOGIN">
+            <Button layoutX="37.0" layoutY="11.0" mnemonicParsing="false" style="-fx-background-color: #5865f2;" text="Login" textAlignment="JUSTIFY" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font></Button>
-            <Text layoutX="-75.0" layoutY="2.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Não Autenticado" wrappingWidth="208.0592041015625">
+            <Text fill="#b5bac1" layoutX="-75.0" layoutY="2.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Não Autenticado" wrappingWidth="208.0592041015625">
                <font>
                   <Font size="20.0" />
                </font>
@@ -40,8 +40,8 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="838.0">
                      <children>
-                        <ListView fx:id="listViewMusicas" layoutX="13.0" layoutY="90.0" prefHeight="262.0" prefWidth="844.0" />
-                        <Text layoutX="258.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione uma música para reproduzir">
+                        <ListView fx:id="listViewMusicas" layoutX="13.0" layoutY="90.0" prefHeight="262.0" prefWidth="844.0" style="-fx-background-color: #4E5058;" />
+                        <Text fill="WHITE" layoutX="258.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione uma música para reproduzir">
                            <font>
                               <Font size="22.0" />
                            </font>
@@ -53,45 +53,45 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="411.0" prefWidth="886.0">
                      <children>
-                        <ListView layoutX="91.0" layoutY="130.0" prefHeight="168.0" prefWidth="278.0" />
-                        <Button layoutX="105.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" text="Nova Playlist">
+                        <ListView layoutX="91.0" layoutY="130.0" prefHeight="168.0" prefWidth="278.0" style="-fx-background-color: #4E5058;" />
+                        <Button layoutX="105.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #4E5058;" text="Nova Playlist" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
                            <graphic>
-                              <FontIcon iconLiteral="ti-plus" />
+                              <FontIcon iconColor="WHITE" iconLiteral="ti-plus" />
                            </graphic>
                         </Button>
-                        <Text layoutX="154.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minhas Playlists">
+                        <Text fill="#b5bac1" layoutX="154.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minhas Playlists">
                            <font>
                               <Font size="22.0" />
                            </font>
                         </Text>
-                        <Text layoutX="160.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione uma playlist para toca-la ou editar suas músicas.">
+                        <Text fill="WHITE" layoutX="160.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selecione uma playlist para toca-la ou editar suas músicas.">
                            <font>
                               <Font size="22.0" />
                            </font>
                         </Text>
-                        <ListView layoutX="486.0" layoutY="130.0" prefHeight="119.0" prefWidth="303.0" />
-                        <Text layoutX="565.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Só as melhores">
+                        <ListView layoutX="486.0" layoutY="130.0" prefHeight="168.0" prefWidth="278.0" style="-fx-background-color: #4E5058;" />
+                        <Text fill="#b5bac1" layoutX="565.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Só as melhores">
                            <font>
                               <Font size="22.0" />
                            </font>
                         </Text>
-                        <Button layoutX="504.0" layoutY="310.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="266.0" text="Adicionar Músicas">
+                        <Button layoutX="638.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="124.0" style="-fx-background-color: #4E5058;" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
                            <graphic>
-                              <FontIcon iconLiteral="ti-plus" />
+                              <FontIcon iconColor="WHITE" iconLiteral="ti-plus" />
                            </graphic>
                         </Button>
-                        <Button layoutX="504.0" layoutY="262.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="268.0" text="Reproduzir">
+                        <Button layoutX="486.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="124.0" style="-fx-background-color: #4E5058;" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
                            <graphic>
-                              <FontIcon iconLiteral="ti-control-play" />
+                              <FontIcon iconColor="WHITE" iconLiteral="ti-control-play" />
                            </graphic>
                         </Button>
                      </children></AnchorPane>
@@ -101,20 +101,21 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="370.0" prefWidth="857.0">
                      <children>
-                        <Text layoutX="14.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Essa lista contém os diretórios ou pastas por onde o programa procura as músicas.">
+                        <Text fill="WHITE" layoutX="14.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Essa lista contém os diretórios ou pastas por onde o programa procura as músicas.">
                            <font>
                               <Font size="22.0" />
                            </font>
                         </Text>
-                        <Button fx:id="btnAddDiretorio" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" onAction="#escolherDiretorio" prefHeight="38.0" prefWidth="232.0" text="Adicionar Diretório">
+                        <Button fx:id="btnAddDiretorio" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" onAction="#escolherDiretorio" prefHeight="38.0" prefWidth="232.0" style="-fx-background-color: #4E5058;" text="Adicionar Diretório" textFill="WHITE">
                            <graphic>
-                              <FontIcon iconLiteral="ti-folder" wrappingWidth="22.799985885620117" />
+                              <FontIcon iconColor="WHITE" iconLiteral="ti-folder" wrappingWidth="22.799985885620117" />
                            </graphic>
                            <font>
                               <Font size="18.0" />
                            </font>
                         </Button>
-                        <ListView fx:id="listViewDiretorios" layoutX="13.0" layoutY="113.0" prefHeight="239.0" prefWidth="844.0" />
+                        <ListView fx:id="listViewDiretorios" layoutX="13.0" layoutY="113.0" prefHeight="239.0" prefWidth="844.0" style="-fx-background-color: #4E5058;" />
+                        <Pane layoutX="136.0" layoutY="125.0" prefHeight="200.0" prefWidth="200.0" />
                      </children>
                   </AnchorPane>
                </content>
@@ -123,21 +124,16 @@
       </TabPane>
       <Group layoutX="-1.0" layoutY="497.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="90.0" layoutX="-1.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="889.0" />
-            <ImageView fitHeight="94.0" fitWidth="88.0" layoutX="2.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  
-               </image>
-            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="90.0" layoutX="-1.0" layoutY="6.0" stroke="#313338" strokeType="INSIDE" strokeWidth="100.0" width="889.0" />
             <Group layoutX="304.0" layoutY="71.0">
                <children>
-                  <Text fx:id="labelTempoAtual" layoutX="-28.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0:00">
+                  <Text fx:id="labelTempoAtual" fill="WHITE" layoutX="-28.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0:00">
                      <font>
                         <Font size="13.0" />
                      </font>
                   </Text>
                   <Slider fx:id="sliderTempo" layoutX="3.0" prefHeight="19.0" prefWidth="278.0" />
-                  <Text fx:id="labelDuracao" layoutX="287.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0:00">
+                  <Text fx:id="labelDuracao" fill="WHITE" layoutX="287.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0:00">
                      <font>
                         <Font size="13.0" />
                      </font>
@@ -146,28 +142,28 @@
             </Group>
             <Group layoutX="361.0" layoutY="15.0">
                <children>
-                  <Button fx:id="btnPlayPause" layoutX="55.0" layoutY="-2.0" mnemonicParsing="false" onAction="#alternarPlayPause" prefHeight="55.0" prefWidth="55.0" styleClass="btnPlayer">
+                  <Button fx:id="btnPlayPause" layoutX="55.0" layoutY="-2.0" mnemonicParsing="false" onAction="#alternarPlayPause" prefHeight="55.0" prefWidth="55.0" style="-fx-background-color: #1E1F22;" styleClass="btnPlayer" textFill="WHITE">
                      <graphic>
-                        <FontIcon fx:id="iconPlayPause" iconLiteral="ti-control-play" iconSize="40" wrappingWidth="39.199951171875" />
+                        <FontIcon fx:id="iconPlayPause" iconColor="WHITE" iconLiteral="ti-control-play" iconSize="40" wrappingWidth="39.199951171875" />
                      </graphic>
                   </Button>
-                  <Button fx:id="btnTocarAnterior" layoutY="3.0" mnemonicParsing="false" onAction="#tocarAnterior" prefHeight="45.0" prefWidth="46.0" styleClass="btnPlayer">
+                  <Button fx:id="btnTocarAnterior" layoutY="3.0" mnemonicParsing="false" onAction="#tocarAnterior" prefHeight="45.0" prefWidth="46.0" style="-fx-background-color: #1E1F22;" styleClass="btnPlayer">
                      <graphic>
-                        <FontIcon iconLiteral="ti-control-skip-backward" iconSize="30" />
+                        <FontIcon iconColor="WHITE" iconLiteral="ti-control-skip-backward" iconSize="30" />
                      </graphic>
                   </Button>
-                  <Button fx:id="btnTocarProxima" layoutX="120.0" layoutY="3.0" mnemonicParsing="false" onAction="#tocarProxima" prefHeight="45.0" prefWidth="46.0" styleClass="btnPlayer">
+                  <Button fx:id="btnTocarProxima" layoutX="120.0" layoutY="3.0" mnemonicParsing="false" onAction="#tocarProxima" prefHeight="45.0" prefWidth="46.0" style="-fx-background-color: #1E1F22;" styleClass="btnPlayer">
                      <graphic>
-                        <FontIcon iconLiteral="ti-control-skip-forward" iconSize="30" />
+                        <FontIcon iconColor="WHITE" iconLiteral="ti-control-skip-forward" iconSize="30" />
                      </graphic>
                   </Button>
                </children>
             </Group>
             <Group layoutX="662.0" layoutY="23.0">
                <children>
-                  <Button fx:id="btnVolume" mnemonicParsing="false" onAction="#alternarMudo" prefHeight="35.0" prefWidth="36.0" style="-fx-background-radius: 30;">
+                  <Button fx:id="btnVolume" mnemonicParsing="false" onAction="#alternarMudo" prefHeight="35.0" prefWidth="36.0" style="-fx-background-radius: 30; -fx-background-color: #1E1F22;">
                      <graphic>
-                        <FontIcon fx:id="iconVolume" iconLiteral="ti-volume" iconSize="20" />
+                        <FontIcon fx:id="iconVolume" iconColor="WHITE" iconLiteral="ti-volume" iconSize="20" />
                      </graphic>
                   </Button>
                   <Slider fx:id="sliderVolume" layoutX="39.0" layoutY="10.0" value="100.0" />
