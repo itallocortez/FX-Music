@@ -1,6 +1,36 @@
 .btnPlayer {
     -fx-background-radius: 30;
+    -fx-background-color: #1E1F22;
 }
+.btnPlayer:hover {
+    -fx-background-color:  #242429;
+}
+.btnPlayer:pressed {
+    -fx-background-color:  #121214;
+}
+.body_btn{
+    -fx-background-color: #4E5058;
+}
+.body_btn:hover{
+    -fx-background-color: #686a72;
+}
+.body_btn:pressed{
+    -fx-background-color: #2d2e31;
+}
+
+.login_btn{
+    -fx-background-color :  #5865f2;
+}
+
+.login_btn:hover{
+    -fx-background-color :  #434ec0;
+}
+.login_btn:pressed{
+    -fx-background-color :  #353d99;
+}
+
+
+
 
 .tab-pane .tab-header-area .tab-header-background {
     -fx-opacity: 0;
@@ -9,31 +39,34 @@
 .tab-pane
 {
     -fx-tab-min-width: 90px;
-    -fx-tab-max-height: 180px;
+    -fx-tab-max-height: 150px;
 }
 
 .tab{
-    -fx-background-insets: 0 1 0 1,0,0;
 }
 .tab-pane .tab
 {
-    -fx-background-color: #e6e6e6;
+    -fx-background-color: #1e1f22;
 
 }
 
 .tab-pane .tab:selected
 {
-    -fx-background-color: #3c3c3c;
+    -fx-background-color: #313338;
 }
 
 .tab .tab-label { 
     -fx-alignment: CENTER;
-    -fx-text-fill: #828282;
+    -fx-text-fill: #b5bac1;
     -fx-font-size: 20px;
-    -fx-font-weight: bold;
 }
 
 .tab:selected .tab-label { 
     -fx-alignment: CENTER;
-    -fx-text-fill: #96b946;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.player_container{
+    -fx-background-color: #313338;
 }
