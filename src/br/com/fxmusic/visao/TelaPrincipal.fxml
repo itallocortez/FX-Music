@@ -22,7 +22,7 @@
       </Text>
       <Group layoutX="670.0" layoutY="34.0">
          <children>
-            <Button layoutX="37.0" layoutY="11.0" mnemonicParsing="false" style="-fx-background-color: #5865f2;" text="Login" textAlignment="JUSTIFY" textFill="WHITE">
+            <Button layoutX="37.0" layoutY="11.0" mnemonicParsing="false" styleClass="login_btn" text="Login" textAlignment="JUSTIFY" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font></Button>
@@ -54,7 +54,7 @@
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="411.0" prefWidth="886.0">
                      <children>
                         <ListView layoutX="91.0" layoutY="130.0" prefHeight="168.0" prefWidth="278.0" style="-fx-background-color: #4E5058;" />
-                        <Button layoutX="105.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #4E5058;" text="Nova Playlist" textFill="WHITE">
+                        <Button layoutX="105.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="250.0" styleClass="body_btn" text="Nova Playlist" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -78,7 +78,7 @@
                               <Font size="22.0" />
                            </font>
                         </Text>
-                        <Button layoutX="638.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="124.0" style="-fx-background-color: #4E5058;" textFill="WHITE">
+                        <Button layoutX="638.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="124.0" styleClass="body_btn" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -86,7 +86,7 @@
                               <FontIcon iconColor="WHITE" iconLiteral="ti-plus" />
                            </graphic>
                         </Button>
-                        <Button layoutX="486.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="124.0" style="-fx-background-color: #4E5058;" textFill="WHITE">
+                        <Button layoutX="486.0" layoutY="310.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="124.0" styleClass="body_btn" textFill="WHITE">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -106,7 +106,7 @@
                               <Font size="22.0" />
                            </font>
                         </Text>
-                        <Button fx:id="btnAddDiretorio" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" onAction="#escolherDiretorio" prefHeight="38.0" prefWidth="232.0" style="-fx-background-color: #4E5058;" text="Adicionar Diretório" textFill="WHITE">
+                        <Button fx:id="btnAddDiretorio" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" onAction="#escolherDiretorio" prefHeight="38.0" prefWidth="232.0" styleClass="body_btn" text="Adicionar Diretório" textFill="WHITE">
                            <graphic>
                               <FontIcon iconColor="WHITE" iconLiteral="ti-folder" wrappingWidth="22.799985885620117" />
                            </graphic>
@@ -142,26 +142,26 @@
             </Group>
             <Group layoutX="361.0" layoutY="15.0">
                <children>
-                  <Button fx:id="btnPlayPause" layoutX="55.0" layoutY="-2.0" mnemonicParsing="false" onAction="#alternarPlayPause" prefHeight="55.0" prefWidth="55.0" style="-fx-background-color: #1E1F22;" styleClass="btnPlayer" textFill="WHITE">
+                  <Button fx:id="btnPlayPause" layoutX="55.0" layoutY="-2.0" mnemonicParsing="false" onAction="#alternarPlayPause" prefHeight="55.0" prefWidth="55.0" styleClass="btnPlayer" textFill="WHITE">
                      <graphic>
-                        <FontIcon fx:id="iconPlayPause" iconColor="WHITE" iconLiteral="ti-control-play" iconSize="40" wrappingWidth="39.199951171875" />
+                        <FontIcon fx:id="iconPlayPause" iconColor="WHITE" iconLiteral="ti-control-play" iconSize="40" text="" wrappingWidth="39.199951171875" />
                      </graphic>
                   </Button>
-                  <Button fx:id="btnTocarAnterior" layoutY="3.0" mnemonicParsing="false" onAction="#tocarAnterior" prefHeight="45.0" prefWidth="46.0" style="-fx-background-color: #1E1F22;" styleClass="btnPlayer">
+                  <Button fx:id="btnTocarAnterior" layoutY="3.0" mnemonicParsing="false" onAction="#tocarAnterior" prefHeight="45.0" prefWidth="46.0" styleClass="btnPlayer">
                      <graphic>
                         <FontIcon iconColor="WHITE" iconLiteral="ti-control-skip-backward" iconSize="30" />
                      </graphic>
                   </Button>
-                  <Button fx:id="btnTocarProxima" layoutX="120.0" layoutY="3.0" mnemonicParsing="false" onAction="#tocarProxima" prefHeight="45.0" prefWidth="46.0" style="-fx-background-color: #1E1F22;" styleClass="btnPlayer">
+                  <Button fx:id="btnTocarProxima" layoutX="120.0" layoutY="3.0" mnemonicParsing="false" onAction="#tocarProxima" prefHeight="45.0" prefWidth="46.0" styleClass="btnPlayer">
                      <graphic>
-                        <FontIcon iconColor="WHITE" iconLiteral="ti-control-skip-forward" iconSize="30" />
+                        <FontIcon iconColor="WHITE" iconLiteral="ti-control-skip-forward" iconSize="30" text="" />
                      </graphic>
                   </Button>
                </children>
             </Group>
             <Group layoutX="662.0" layoutY="23.0">
                <children>
-                  <Button fx:id="btnVolume" mnemonicParsing="false" onAction="#alternarMudo" prefHeight="35.0" prefWidth="36.0" style="-fx-background-radius: 30; -fx-background-color: #1E1F22;">
+                  <Button fx:id="btnVolume" mnemonicParsing="false" onAction="#alternarMudo" prefHeight="35.0" prefWidth="36.0" styleClass="btnPlayer">
                      <graphic>
                         <FontIcon fx:id="iconVolume" iconColor="WHITE" iconLiteral="ti-volume" iconSize="20" />
                      </graphic>
